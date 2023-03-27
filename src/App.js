@@ -9,7 +9,7 @@ function App() {
       setListTodo([...listTodo,inputText]);
   }
   const deleteItem = (key)=>{
-    let newListTodo = [listTodo];
+    let newListTodo = [...listTodo];
     newListTodo.splice(key,1)
     setListTodo([...newListTodo])
   }
@@ -29,4 +29,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
